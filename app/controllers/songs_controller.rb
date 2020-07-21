@@ -8,11 +8,10 @@ class SongsController < ApplicationController
         redirect_to artists_path
       end
     else
-      
       @songs = Song.all
-      
     end
   end
+  
 
   def show
     if params[:artist_id]
